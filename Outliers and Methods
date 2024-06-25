@@ -44,6 +44,8 @@ Conclusion,
 Outliers are an integral part of data analysis and can provide significant insights or pose challenges depending on how they are handled.
 Understanding their nature, detection methods, and the appropriate strategies to manage them is crucial for accurate and effective data analysis.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 (B) What is a Z-Score?
 
 A Z-score, also known as a standard score, measures the number of standard deviations a data point is from the mean of a dataset. 
@@ -95,6 +97,8 @@ Z-scores are a powerful statistical tool for measuring how far a data point is f
 They are widely used in statistical analysis for outlier detection, standardization, and probability calculations. 
 However, understanding the underlying distribution and context of the data is crucial for accurate interpretation and application of Z-scores.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 (C)Interquartile Range (IQR) for Data Analysts
    
 What is the Interquartile Range (IQR)?
@@ -144,5 +148,7 @@ Conclusion,
 For data analysts, the IQR is an essential tool for understanding data variability and identifying outliers. 
 Its robustness against outliers and focus on the central data make it particularly useful in exploratory data analysis and preprocessing steps. 
 However, it should be used in conjunction with other statistical measures to get a comprehensive understanding of the dataset.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
