@@ -1,4 +1,4 @@
-What are Outliers?
+(A) What are Outliers?
 
 Outliers are data points that differ significantly from other observations in a dataset. 
 They may be due to variability in the data, measurement errors, or other factors. 
@@ -44,7 +44,7 @@ Conclusion,
 Outliers are an integral part of data analysis and can provide significant insights or pose challenges depending on how they are handled.
 Understanding their nature, detection methods, and the appropriate strategies to manage them is crucial for accurate and effective data analysis.
 
-What is a Z-Score?
+(B) What is a Z-Score?
 
 A Z-score, also known as a standard score, measures the number of standard deviations a data point is from the mean of a dataset. 
 It is a way to describe a data point's position relative to the overall distribution of the data.
@@ -95,9 +95,54 @@ Z-scores are a powerful statistical tool for measuring how far a data point is f
 They are widely used in statistical analysis for outlier detection, standardization, and probability calculations. 
 However, understanding the underlying distribution and context of the data is crucial for accurate interpretation and application of Z-scores.
 
+(C)Interquartile Range (IQR) for Data Analysts
+   
+What is the Interquartile Range (IQR)?
 
+The Interquartile Range (IQR) is a measure of statistical dispersion and represents the range within which the central 50% of data points lie. 
+It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1) of a dataset.
+The IQR provides insights into the spread and variability of the central portion of the data, excluding outliers.
 
+Formula for IQR,
+The IQR is calculated using the formula:
 
+IQR=Q3−Q1
 
+where:
+a. Q1 (First Quartile): The value below which 25% of the data points fall (25th percentile).
+b. Q3 (Third Quartile): The value below which 75% of the data points fall (75th percentile).
+
+Steps to Calculate IQR
+1. Arrange Data: Sort the data in ascending order.
+2. Find Q1: Determine the first quartile, which is the median of the lower half of the dataset.
+3. Find Q3: Determine the third quartile, which is the median of the upper half of the dataset.
+4. Calculate IQR: Subtract Q1 from Q3.
+
+Example of IQR Calculation,
+Consider the dataset: 5, 7, 8, 12, 13, 14, 18, 21, 23, 25
+
+1. Sort Data: Already sorted.
+2. Find Q1: Median of 5, 7, 8, 12, 13 is 8.
+3. Find Q3: Median of 14, 18, 21, 23, 25 is 21.
+4. Calculate IQR:  IQR=21−8=13.
+
+Applications of IQR for Data Analysts
+a. Outlier Detection: IQR is commonly used to identify outliers. Data points are considered outliers if they fall below Q1−1.5×IQR or above Q3+1.5×IQR. 
+b. Assessing Data Distribution: IQR provides a measure of the central data spread, helping analysts understand the variability in the middle 50% of the dataset.
+c. Comparing Distributions: By comparing the IQRs of different datasets, analysts can assess which datasets have greater variability.
+
+Pros of Using IQR-
+1. Robustness to Outliers: IQR is not influenced by extreme values, making it a robust measure of spread.
+2. Simplicity: Easy to compute and interpret.
+3. Focus on Central Data: Emphasizes the central portion of the data, providing a clear picture of the core variability.
+
+Cons of Using IQR-
+1. Limited Scope: Does not account for the entire range of data, potentially missing insights from the tails of the distribution.
+2. Quartile Calculation Sensitivity: Small datasets can yield quartile values that are sensitive to individual data points.
+
+Conclusion,
+For data analysts, the IQR is an essential tool for understanding data variability and identifying outliers. 
+Its robustness against outliers and focus on the central data make it particularly useful in exploratory data analysis and preprocessing steps. 
+However, it should be used in conjunction with other statistical measures to get a comprehensive understanding of the dataset.
 
 
